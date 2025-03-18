@@ -1,40 +1,11 @@
-<html>
-    <head>
-        <title>House Finder</title>
-        <script type="text/javascript">
-            function ValidateNumber(value) {
-                // Validate the number
-                // if (!isNumber(Value)) {
-                alert("Please enter a number.");
-            }
-
-            function ValidateZipCode(value) {
-                // Validate the zip code
-                 if (!isNumber(value) ) {
-                alert("please enter a zip code in the form XXXXX.");
-                 }
-            }
-
-            function calcPrice () {
-                var maxPrice = document.getElementById("income").value * 4;
-                alert("You can afford a house that costs up to $" + maxPrice + ".");
-            }
-
-            function findHouses(form) {
-                var bedrooms = document.getElementsByTagName("bedrooms").value;
-                var zipCode = document.getElementById("zip").value;
-                // Display a list of matching houses from the Server form.submit();
-            }
-        </script>
-        <style>
-            #frame{
-                display: flex;
-                column-gap: 50px;
-            }
-        </style>
-    </head>
-    <body>
-        <div id="header" style="font-size: 50px;">Ready to find a new house?</div>
+<!DOCTYPE html>
+<head>
+    <script type="text/javascript" src="house.js" defer></script>        
+    <link rel="stylesheet" href="house.css">
+    <title>House Finder</title>
+</head>
+<body>
+    <div id="header" style="font-size: 50px;">Ready to find a new house?</div>
         <div id="frame" style="max-height: 100px;">
             <div id="left">
                 <img src = "house.jpeg" alt="House" />
